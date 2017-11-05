@@ -1,0 +1,96 @@
+/* pages/specialtyList/specialtyList.wxss */
+page {
+	background-color: #F8F8F8;
+}
+
+.carouselView {
+	width: 750rpx;
+	height: 250rpx;
+} 
+
+.carouselItem {
+	width: 100%;
+	height: 100%;
+}
+
+.carouselImageItem {
+	width: 100%;
+}
+
+.listView {
+	width: 100%;
+	flex: 1;
+	background-color: #F8F8F8;
+	margin-top: 16rpx;
+}
+
+.itemView {
+	height: 400rpx;
+	display: flex;
+    justify-content: space-between;
+	padding: 0rpx 18rpx 18rpx 18rpx;
+}
+
+.firstView, .secondView {
+	width: 350rpx;
+	border-radius:6px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.itemView image {
+	width: 100%;
+	height: 234rpx;
+}
+
+.itemView .desView {
+	margin-top: -5rpx;
+	padding: 10rpx;
+}
+
+.itemTitle {
+	display: block;
+	height: 90rpx;
+	font-size: 32rpx;
+	color: black;
+	margin-bottom: 5rpx;
+}
+
+.itemView .div {
+	display: block;
+	text-align: right;
+}
+
+.itemPrice, .itemShipDes {
+	display: inline-block;
+	font-size: 32rpx;
+	color: red;
+} 
+
+.briefInfoView {
+	background-color: red;
+}
+
+.recommend_scroll_x_box {
+ height: 245rpx;
+ white-space: nowrap;
+ display: flex;
+}
+ 
+::-webkit-scrollbar {
+ width: 0;
+ height: 0;
+ color: transparent;
+}
+ 
+.recommend_hot_box {
+ width: 230rpx;
+ height: 245rpx;
+ margin-right: 24rpx;
+ display: inline-block;
+}
+ 
+.recommend_hot_image {
+ width: 230rpx;
+ height: 143rpx;
+}

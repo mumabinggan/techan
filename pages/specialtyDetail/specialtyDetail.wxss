@@ -1,0 +1,92 @@
+/* pages/specialtyDetail/specialtyDetail.wxss */
+page {
+	background-color: #F8F8F8;
+}
+
+.carouselView {
+	width: 750rpx;
+	height: 700rpx;
+} 
+
+.carouselItem {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+.carouselImageItem {
+	width: 100%;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+} 
+
+.baseInfoView {
+	padding: 16rpx;
+	background: white;
+}
+
+.titleView {
+	display: block;
+	font-weight:bold;
+	font-size: 33rpx;
+	color: black;
+	margin-bottom: 20rpx;
+}
+
+.origin {
+	 margin-bottom: 20rpx; 
+}
+
+.originTitle {
+	font-size: 30rpx;
+	color: rgba(0,0,0,0.8);
+	 margin-bottom: 20rpx; 
+}
+
+.locationImage {
+	display: inline-block;
+	width: 30rpx;
+	height: 35rpx;
+	margin-top: 10rpx;
+	margin-right: 16rpx;
+	float: right;
+}
+
+.priceView, .shipDesView {
+	font-size: 38rpx;
+	font-weight:bold;
+	color: red;
+}
+
+.briefIntroTitle, .briefIntroContent, .nutritionalValueTitle, .nutritionalValueContent, 
+.honorTitle, .honorContent, .storyTitle, .storyContent {
+	display: block;
+	padding: 10rpx 18rpx 10rpx 18rpx;
+}
+
+.briefIntroTitle, .nutritionalValueTitle, .honorTitle, .storyTitle {
+	background-color: #ccc;
+	font-weight:bold;
+	font-size: 33rpx;
+}
+
+.briefIntroContent, .nutritionalValueContent, .honorContent, .storyContent {
+	font-size: 30rpx;
+}
+
+ .footerPlaceholderView {
+	height: 90rpx;
+} 
+
+.footerView {
+	width: 100%;
+	height: 90rpx;
+	position: fixed;
+	background-color: red;
+	bottom: 0rpx;
+}

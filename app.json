@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+	"pages/search/search",
+	"pages/profile/profile",
+	"pages/movie/movie",
+	"pages/specialtyList/specialtyList",
+	"pages/specialtyAbout/specialtyAbout",
+	"pages/specialtyDetail/specialtyDetail",
+	"pages/originMap/originMap"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+	"color": "#CCC",
+	"selectedColor": "#FF0000",
+	"list": [
+		{
+			"pagePath": "pages/index/index",
+			"text": "推荐电影",
+			"iconPath": "images/tabbar/tabbar_home_n_icon.png",
+			"selectedIconPath": "images/tabbar/tabbar_home_s_icon.png"
+		},
+		{
+			"pagePath": "pages/search/search",
+			"text": "搜索",
+			"iconPath": "images/tabbar/tabbar_logs_n_icon.png",
+			"selectedIconPath": "images/tabbar/tabbar_logs_s_icon.png"
+		},
+		{
+			"pagePath": "pages/specialtyList/specialtyList",
+			"text": "首页",
+			"iconPath": "images/tabbar/tabbar_test_n_icon.png",
+			"selectedIconPath": "images/tabbar/tabbar_test_s_icon.png"
+		},
+		{
+			"pagePath": "pages/specialtyAbout/specialtyAbout",
+			"text": "联系我们",
+			"iconPath": "images/tabbar/tabbar_test_n_icon.png",
+			"selectedIconPath": "images/tabbar/tabbar_test_s_icon.png"
+		},
+		{
+			"pagePath": "pages/profile/profile",
+			"text": "我的",
+			"iconPath": "images/tabbar/tabbar_test_n_icon.png",
+			"selectedIconPath": "images/tabbar/tabbar_test_s_icon.png"
+		}
+	]
+	}
+}

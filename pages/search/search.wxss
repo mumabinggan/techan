@@ -1,0 +1,27 @@
+/* pages/search/search.wxss */
+
+ .bg {
+	display: flex;
+}
+
+.img {
+	width: 30rpx;
+	height: 30rpx;
+	background: red;
+}
+
+.info {
+	width: 200rpx;
+	background-color: green;
+}
+
+.title {
+	display: inline-block;
+}  
+
+.atitle {
+	width: 300rpx;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

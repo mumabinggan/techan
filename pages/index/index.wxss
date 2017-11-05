@@ -1,0 +1,73 @@
+/**index.wxss**/
+.page-header {
+	text-align: center;
+	height: 80rpx;
+	background-color: transparent;
+}
+
+.page-header-text {
+	line-height: 80rpx;
+}
+
+.page-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.item {
+	padding: 20rpx;
+	display: flex;
+	border-top: 2rpx solid #eee;
+}
+
+.poster {
+	width: 128rpx;
+	height:128rpx;
+	margin-right: 20rpx;
+} 
+
+.info {
+	margin-right: 20rpx;
+	flex: 1;
+}
+
+.title {
+	display: block;
+	margin-bottom: 14rpx; 
+	font-size: 32rpx;
+	height: 30rpx;
+	/* white-space:nowrap; */
+}
+
+.sub-title {
+	display: block;
+	font-size: 22rpx;
+	color: #c0c0c0;
+	margin-bottom: 14rpx; 
+}
+
+.artists {
+	font-size: 26rpx;
+	color: #999;
+	display: block;
+}
+
+.rating {
+	font-size: 28rpx;
+	font-weight: bold;
+	color: red;
+}
+
+/* .item .info {
+	flex: 1;
+} */
+/*  
+.info {
+	background-color: red;
+}
+
+.title {
+	font-size: 10rpx;
+} */
+

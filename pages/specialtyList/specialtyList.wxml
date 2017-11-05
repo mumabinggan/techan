@@ -1,0 +1,31 @@
+<!--pages/specialtyList/specialtyList.wxml-->
+<swiper class='carouselView' indicator-dots="true" indicator-active-color="#ffffff" autoplay="true" interval="5000" circular="true">
+	<swiper-item class="carouselItem" wx:for="{{carouselImageUrls}}">
+		<image class='carouselImageItem'
+			src="{{item}}" mode='aspectFill' lazy-load:true>
+		</image>
+	</swiper-item>
+</swiper>
+<scroll-view class='listView' scroll-y="true">
+	<view class='itemView' wx:for="{{list}}">
+		<navigator url='../specialtyDetail/specialtyDetail' class='firstView'>
+			<image class='itemImage' src='{{item.imageUrl}}' mode='aspectFill' lazy-load:true></image><view class='desView'>
+				<text class='itemTitle'>{{item.title}}</text>
+				<text class="div">
+					<text class='itemPrice'>{{item.price}}</text>
+					<text class='itemShipDes' wx:if="{{item.freeShip}}">(包邮)</text>
+				</text>
+			</view>
+		</navigator>
+
+		<navigator url='../specialtyDetail/specialtyDetail' class='secondView'>
+			<image class='itemImage' src='{{item.imageUrl}}' mode='aspectFill' lazy-load:true></image><view class='desView'>
+				<text class='itemTitle'>{{item.title}}</text>
+				<text class="div">
+					<text class='itemPrice'>{{item.price}}</text>
+					<text class='itemShipDes' wx:if="{{item.freeShip}}">(包邮)</text>
+				</text>
+			</view>
+		</navigator>
+	</view>		
+</scroll-view> 

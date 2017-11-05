@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='page-header'>
+	<text class='page-header-text'>{{title}}</text>
+</view> 
+ <scroll-view class='page-body' scroll-y="true">
+	<navigator url='../movie/movie' wx:for="{{movies}}">
+		<view class='item'>
+			<image class='poster' src='https://img3.doubanio.com/mpic/s1001902.jpg' >
+			</image>
+			<view class='info'>
+				<text class='title'>我们是要要要要要林要要要要要要要要要要要要要要要要</text>
+				<text class='sub-title'>{{item.original_title}}({{item.year}})</text><text class='artists' wx:for="{{item.directors}}">{{item.name}}</text>
+				</view>
+			<view class='rating'>
+				<text>{{item.rating.average}}</text>
+			</view>
+		</view>
+	</navigator>
+</scroll-view> 

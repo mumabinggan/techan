@@ -1,0 +1,44 @@
+<!--pages/specialtyDetail/specialtyDetail.wxml-->
+<swiper class='carouselView' indicator-dots="true" indicator-active-color="#ffffff" autoplay="true" interval="5000" circular="true">
+	<swiper-item class="carouselItem" wx:for="{{carouselImageUrls}}">
+		<image class='carouselImageItem'
+			src="{{item}}" mode='aspectFill' lazy-load:true>
+		</image>
+	</swiper-item>
+</swiper>
+
+<scroll-view class='listView' scroll-y="true">
+	<view class='baseInfoView'>
+		<text class='titleView'>{{title}}</text>
+		<view class='origin'>
+			<text class='originTitle'>产地：{{origin}}</text>
+			<image class='locationImage' src='../../images/specialtyDetail/location.png'></image>
+		</view>
+		<text class='priceView'>{{price}}</text>
+		<text class='shipDesView' wx:if="{{freeShip}}">(包邮)</text>
+	</view>
+
+	<view class='briefInfoView' wx:if="{{haveBriefIntro}}">
+		<text class='briefIntroTitle'>商品简介</text>
+		<text class='briefIntroContent'>{{breifIntroduction}}</text>
+	</view>
+
+	<view class='nutritionalValueInfoView' wx:if="{{haveNutritionalValue}}">
+		<text class='nutritionalValueTitle'>营养价格</text>
+		<text class='nutritionalValueContent'>{{nutritionalValue}}</text>
+	</view>
+
+	<view class='honorInfoView' wx:if="{{haveHonor}}">
+		<text class='honorTitle'>荣誉</text>
+		<text class='honorContent'>{{honor}}</text>
+	</view>
+
+	<view class='storyInfoView' wx:if="{{haveHistory}}">
+		<text class='storyTitle'>典故</text>
+		<text class='storyContent'>{{history}}</text>
+	</view>
+</scroll-view>
+
+<view class="footerPlaceholderView"></view> 
+
+<view class='footerView'></view>
